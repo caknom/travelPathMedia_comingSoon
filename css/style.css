@@ -393,6 +393,21 @@ header #effect-box, header .video-box, header .image-box {
 	height: 100vh;
     width: 100%;
     top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.video-box video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+    z-index: -1;
 }
 
 @-webkit-keyframes scrolls {
